@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0E1014;
+  flex: 1 1 auto;
+  background-size: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.page {
+  max-width: 1140px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__purple-ball-img {
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  top: -2px;
+  left: 57%;
+}
+
+.app__purple-light {
+  position: absolute;
+  width: 900px;
+  height: 300px;
+  left: 20%;
+}
+
+.app__red-ball_little-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 60%;
+  left: 60%;
+}
+
+.app__red-light-img {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  top: 25%;
+  left: 0;
+}
+
+.app__red-ball {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  top: 10%;
+  left: 35%;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  .page {
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/assets/mobile/purpleBall.png'), url('/src/assets/mobile/purpleLight.png'), url('/src/assets/mobile/redLight.png'), url('/src/assets/redBallLittle.png');
+    background-repeat: no-repeat;
+    background-position: 100% 65%, 50% 50%, 0 0%, 5% 104%;
+    background-size: 40px 80px, 100% 100%, 100% 100%, 80px 80px;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+
+@media only screen and (min-width: 601px) {
+  .app {
+    background-image: url('/src/assets/purpleBall.png'), url('/src/assets/purpleLight.png'), url('/src/assets/redLight.png'), url('/src/assets/redBallLittle.png'), url('/src/assets/redBall.png');
+    background-repeat: no-repeat;
+    background-position: 58% 0, 50% 0, 0 10%, 57% 57%, 40% 10%;
+    background-size: 90px 80px, 800px 400px, 600px 900px, 60px 60px, 100px 100px;
   }
 }
