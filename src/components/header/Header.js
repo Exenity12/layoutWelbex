@@ -1,8 +1,8 @@
 import './Header.css';
-import whatsApp from '../../assets/whatsApp.png'
-import telegram from '../../assets/telegram.png'
-import viber from '../../assets/viber.png'
-import logo from '../../assets/logo.png'
+import whatsApp from '../../assets/whatsApp.png';
+import telegram from '../../assets/telegram.png';
+import viber from '../../assets/viber.png';
+import logo from '../../assets/logo.png';
 
 function Header() {
   const links = [
@@ -17,8 +17,7 @@ function Header() {
     {id: 0, src: telegram, class: 'header__about-massengers-img_telegram'},
     {id: 1, src: viber, class: 'header__about-massengers-img_viber'},
     {id: 2, src: whatsApp, class: 'header__about-massengers-img_whatsApp'},
-  ]
-
+  ];
 
   return (
     <header className="header">
@@ -39,11 +38,12 @@ function Header() {
                 </li>
               )
             })}
-        </ul>
+          </ul>
         </nav>
 
         <div className='header__about'>
           <div className='header__about-number'>+7 555 555-55-55</div>
+          
           <div className='header__about-massengers'>
             {messengers.map((messenger) => {
               return (

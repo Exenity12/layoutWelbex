@@ -1,8 +1,8 @@
 import './Footer.css';
 
-import whatsApp from '../../assets/whatsApp.png'
-import telegram from '../../assets/telegram.png'
-import viber from '../../assets/viber.png'
+import whatsApp from '../../assets/whatsApp.png';
+import telegram from '../../assets/telegram.png';
+import viber from '../../assets/viber.png';
 
 function Footer() {
   const menuLinks = [
